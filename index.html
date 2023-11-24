@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  crossorigin="anonymous"
+/>  <link rel="stylesheet" href="css/style.css">
+  <title>The Word-Slinger</title>
+</head>
+
+<body>
+  <div class="scoreboard score text-center hidden">0</div>
+  <div class="jumbotron">
+    <img class="jumbo-image-left" src="images/wordSling.png">
+    <h1 class="header text-center">Word-Slinger</h1>
+    <p class="text-center mt-2">Take a <i>shot</i> at this</p>
+    <img class="jumbo-image-right" src="images/wordSlingRight.png">
+  </div>
+
+  <section class="home main-game mx-auto">
+    <div class="container text-center">
+      <h1 class="mx-auto">Fancy Yourself A Word-Slinger?</h1>
+      <h5>Test your <i>word-smithing</i> skills by playing our vocabulary building test. With words being our most
+        valuable weapons, why not take the time oil the gears and clean the barrel?</h5>
+      <h1><b><em><u>OR</u></em></b></h1>
+      <h4>Test your own word-smith skills by adding custom words to the test.</h4>
+      <button class="add-btn btn" type="button"><i>Add</i> Custom Questions</button>
+      <button class="play-btn btn" type="button"><i>Play</i> Word-Slinger</button>
+    </div>
+  </section>
+
+  <!--add-word page-->
+  <section class="add-page hidden">
+    <div class="container text-center mx-auto form-cont">
+      <form>
+        <h1 class="form-title">Word Smithy</h1>
+        <div class="form-group">
+          <label for="word-definition">Enter your words definition:</label>
+          <input type="text" class="form-control custom-word-def" placeholder="Definition" required>
+        </div>
+        <div class="form-group">
+          <label for="word-answer">Enter the correct answer:</label>
+          <input type="text" class="form-control custom-word-ans" placeholder="Answer" required>
+        </div>
+        <p class="btn-feedback">Pressing the sling button will add your personally smithed word to the
+          Word-Slinger Quiz</p>
+        <button class="btn custom-word-btn" type="button"><i>Sling</i> Your Word</button>
+        <button class="btn back-btn" type="button">Go <i>Back</i></button>
+      </form>
+    </div>
+  </section>
+
+  <!--main game page-->
+  <section class="game main-game mx-auto hidden">
+    <div class="container">
+      <h1 class="prompt text-center">Match the word with the definiton</h1>
+      <div class="q-box text-center"></div>
+      <div class="a-box text-center"></div>
+  </section>
+
+
+  <!--feedback page begins hidden-->
+  <section class="feedback-page hidden">
+    <div class="main-game text-center mx-auto">
+      <h1 class="comment">Great Job!</h1>
+      <h5>you scored</h5>
+      <h2 class="score"></h2>
+      <h5>points</h5>
+      <h4>Your Rank:</h4>
+      <h1 class="rank"></h1>
+      <button class="btn" id="play-again">Play Again</button>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+  integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>
+  <!--Personal javascript-->
+  <script src="script/script.js"></script>
+</body>
+
+</html>

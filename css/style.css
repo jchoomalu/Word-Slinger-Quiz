@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/jumble.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hidden {
+  display:none
+}
+
+i {
+  color: red;
+  font-size: 1.2em;
+}
+
+.scoreboard {
+  position: absolute;
+  top: 60%;
+  left: -50px;
+  z-index: 1;
+  font-size: 15em;
+  opacity: .1;
+  border-radius: 50%;
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+/* class added by js upon right or wrong answer */
+.right {
+  color: limegreen;
+  opacity: 1;
+}
+
+.wrong {
+  color: red;
+  opacity: 1;
+}
+
+.jumbotron {
+  background-color: black;
+  color:white;
+  opacity: .75;
+  height: 250px;
+  text-shadow: 0px 0px 20px bisque;
+  box-shadow: 0px 0px 10px rgb(217,214,210);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.jumbotron p {
+  font-size: 1.3em;
+}
+
+.jumbo-image-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 248px;
+  opacity: .35;
+}
+
+.jumbo-image-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 248px;
+  opacity: .35;
+}
+
+.header {
+  font-size: 6em;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 1.5em;
+  min-width: 70px;
+  background-color: black;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  opacity: .75;
+  margin: 5px;
+  box-shadow: 0px 0px 10px bisque;
+}
+
+.btn:hover {
+  opacity: 1;
+  font-size: 1.55em;
+  box-shadow: 0px 0px 20px bisque;
+}
+
+.main-game {
+  min-width: 300px;
+  background-color: black;
+  color:white;
+  opacity: .75;
+  width: 50%;
+  border-radius: 20px;
+  border: 5px double rgb(217,214,210);
+  box-shadow: 0px 0px 20px rgb(217,214,210);
+  color: white
+}
+
+.main-game h1 {
+  text-shadow: 0px 0px 20px rgb(217,214,210);
+}
+
+.q-box {
+  font-size: 1.3em;
+}
+
+/* add-word form styles */
+.form-cont {
+  color: white;
+  width: 40%;
+}
+
+form {
+  min-width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    font-size: 1em;
+  }
+  .main-game {
+    margin-top: 100px;
+  }
+  .jumbotron {
+    height: 25%;
+  }
+  form {
+    margin-left: -100px;
+  }
+  .scoreboard {
+    margin-left: -50px;
+  }
+}
